@@ -1,6 +1,9 @@
 # Nginx-Complete
 Documenting my Nginx Learning
 
+### Links 
+1. Youtube : https://www.youtube.com/watch?v=D5grhfkjjXE
+
 
 ![](./images/2023-05-03-14-53-00.png)
 
@@ -43,15 +46,15 @@ Documenting my Nginx Learning
 ![](./images/2023-05-03-15-05-53.png)
 
 5. apt based installation of Nginx ( on Ubuntu 20.04 )
-    - sudo apt install lynx 
-    - starting the server : systemctl start nginx
-    - viewning the status : systemctl status nginx 
-    - stopping the server : system stop nginx
+    - ```sudo apt install lynxs```
+    - starting the server : ```systemctl start nginx```
+    - viewning the status : ```systemctl status nginx ```
+    - stopping the server : ```systemctl stop nginx```
     
-    - start the server : systemctl start nginx 
-    - type to visit localhost on the terminal : lynx http://localhost/
-    - get your ip address : ip addr 
-    - viist the ip address on your browser 
+    - start the server : ```systemctl start nginx```
+    - type to visit localhost on the terminal : ```lynx http://localhost/```
+    - get your ip address : ```ip addr```
+    - visit the ip address on your browser 
     - you can see the page 
     ![](./images/2023-05-03-15-14-54.png)
 
@@ -59,12 +62,12 @@ Documenting my Nginx Learning
 6. Directory Structure of Nginx Application
 ![](./images/2023-05-03-15-19-00.png)
 ![](./images/2023-05-03-15-19-17.png)
-    - file locations : cd /etc/nginx
-    - log file locations : cd var/log/nginx
-    - executable file locations : cd /usr/sbin/nginx
-    - document locations ( html files etc ) : cd /usr/share/nginx
-    - tarball locations ( for tarball based installation only ): cd /APPS/nginx/
-    - nginx.conf file is present in : cd /etc/nginx
+    - file locations : ```cd /etc/nginx```
+    - log file locations : ```cd var/log/nginx```
+    - executable file locations : ```cd /usr/sbin/nginx```
+    - document locations ( html files etc ) : ```cd /usr/share/nginx```
+    - tarball locations ( for tarball based installation only ): ```cd /APPS/nginx/```
+    - nginx.conf file is present in : ```cd /etc/nginx```
     
 7. Nginx configurations file reading 
 ![](./images/2023-05-03-15-26-48.png)
@@ -91,6 +94,3 @@ Documenting my Nginx Learning
         - gzip : on 
         - include /etc/nginx/conf.d/*.conf  -> all .conf ( configuration files, has server contacts etc and other configuration information )
 
-
-
-8. 
