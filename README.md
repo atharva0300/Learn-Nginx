@@ -2,7 +2,7 @@
 Documenting my Nginx Learning
 
 
-![](2023-05-03-14-53-00.png)
+![](./images/2023-05-03-14-53-00.png)
 
 1. What is a web server ? 
     - takes request from the client ( browser ) and server responds/delivers the contents.
@@ -16,22 +16,22 @@ Documenting my Nginx Learning
     - It's affordable to install and easy to use 
 
 3. Features of Nginx 
-![](2023-05-03-14-58-16.png)
+![](./images/2023-05-03-14-58-16.png)
 
     - Event based reverse Proxy server : 
-    ![](2023-05-03-14-59-36.png)
+    ![](./images/2023-05-03-14-59-36.png)
 
     - Modular Design
-    ![](2023-05-03-14-59-55.png)
+    ![](./images/2023-05-03-14-59-55.png)
 
     builtin modules can be included. There are over 62 builtin modules 
 
     - Asynchronous Web server 
-    ![](2023-05-03-15-00-28.png)
+    ![](./images/2023-05-03-15-00-28.png)
     Nginx is first a reverse proxy and then a web server
     - Reverse Proxy and Load balancing capability :
     Does not look at the file system and looks at the urls and makes the decision based on it 
-    ![](2023-05-03-15-01-48.png)
+    ![](./images/2023-05-03-15-01-48.png)
 
     - SSL Termination 
     - Few resource requirement and consumption : requires less memeory, CPU cycles
@@ -39,8 +39,8 @@ Documenting my Nginx Learning
     - Http video streaming using mp4/flv/hds/hls : the video is not downloaded in one shot, and the contents is sent in small packets and streamed. Also supports streaming
 
 4. Installation of Nginx 
-![](2023-05-03-15-04-20.png)
-![](2023-05-03-15-05-53.png)
+![](./images/2023-05-03-15-04-20.png)
+![](./images/2023-05-03-15-05-53.png)
 
 5. apt based installation of Nginx ( on Ubuntu 20.04 )
     - sudo apt install lynx 
@@ -53,12 +53,12 @@ Documenting my Nginx Learning
     - get your ip address : ip addr 
     - viist the ip address on your browser 
     - you can see the page 
-    ![](2023-05-03-15-14-54.png)
+    ![](./images/2023-05-03-15-14-54.png)
 
 
 6. Directory Structure of Nginx Application
-![](2023-05-03-15-19-00.png)
-![](2023-05-03-15-19-17.png)
+![](./images/2023-05-03-15-19-00.png)
+![](./images/2023-05-03-15-19-17.png)
     - file locations : cd /etc/nginx
     - log file locations : cd var/log/nginx
     - executable file locations : cd /usr/sbin/nginx
@@ -67,8 +67,8 @@ Documenting my Nginx Learning
     - nginx.conf file is present in : cd /etc/nginx
     
 7. Nginx configurations file reading 
-![](2023-05-03-15-26-48.png)
-![](2023-05-03-15-30-00.png)
+![](./images/2023-05-03-15-26-48.png)
+![](./images/2023-05-03-15-30-00.png)
     - user nginx : with which user processor you want to run the process 
     - worker_processes : number of worker processes 
     - the worker_processes is defined by the number of cores in your hardware 
@@ -90,7 +90,7 @@ Documenting my Nginx Learning
         - keepalive_timeout : 65 -> keeps the connection alive for 65s 
         - gzip : on 
         - include /etc/nginx/conf.d/*.conf  -> all .conf ( configuration files, has server contacts etc and other configuration information )
-          
+
 
 
 8. 
