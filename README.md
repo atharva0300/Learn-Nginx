@@ -46,7 +46,7 @@ Documenting my Nginx Learning
 ![](./images/2023-05-03-15-05-53.png)
 
 5. apt based installation of Nginx ( on Ubuntu 20.04 )
-    - ```sudo apt install lynxs```
+    - ```sudo apt install lynx```
     - starting the server : ```systemctl start nginx```
     - viewning the status : ```systemctl status nginx ```
     - stopping the server : ```systemctl stop nginx```
